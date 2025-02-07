@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 type ButtonProps = {
   color?: string;
-  size?: string;
+  size?: 'small' | 'medium' | 'large'; // size prop의 가능한 값 정의
   active?: string;
   children: React.ReactNode;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -12,7 +12,7 @@ type ButtonProps = {
 
 const Button = ({
   color,
-  size,
+  size = 'medium', // 기본값을 medium으로 설정
   active = 'false',
   children,
   onClick,
@@ -26,8 +26,31 @@ const Button = ({
 
 const S = {
   Button: styled.button<ButtonProps>`
-    width: 15%;
-    height: 4vh;
+    width: ${(props) => {
+      switch (props.size) {
+        case 'small':
+          return '10%';
+        case 'medium':
+          return '15%';
+        case 'large':
+          return '20%';
+        default:
+          return '15%';
+      }
+    }};
+    height: ${(props) => {
+      switch (props.size) {
+        case 'small':
+          return '3vh';
+        case 'medium':
+          return '4vh';
+        case 'large':
+          return '5vh';
+        default:
+          return '4vh';
+      }
+    }};
+
     display: flex;
     justify-content: center;
     align-items: center;
