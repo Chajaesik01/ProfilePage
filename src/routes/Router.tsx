@@ -5,7 +5,7 @@ import {
   Navigate,
   RouterProvider,
 } from 'react-router-dom';
-
+import HomePage from '@/pages/HomePage';
 const Router = () => {
   const { HOME, PROJECT, STUDY } = ROUTER_PATH;
   const router = createBrowserRouter([
@@ -14,11 +14,11 @@ const Router = () => {
       children: [
         {
           index: true,
-          element: <Navigate to={HOME} replace />, // 기본 경로에 보여줄 컴포넌트 (예: HomePage)
+          element: <Navigate to={HOME} replace />,
         },
         {
           path: HOME,
-          //element: <HomePage/>
+          element: <HomePage />,
         },
         {
           path: STUDY,

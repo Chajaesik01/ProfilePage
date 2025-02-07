@@ -2,10 +2,7 @@ import { colors } from '@/styles';
 import styled from 'styled-components';
 import { ROUTER_PATH } from '@/constants/constants';
 import { useLocation, useNavigate } from 'react-router-dom';
-
-type CategoryItemProps = {
-  active: string;
-};
+import Button from '@/components/common/Button';
 
 export const Header = () => {
   const { HOME, PROJECT, STUDY } = ROUTER_PATH;
@@ -15,24 +12,24 @@ export const Header = () => {
   return (
     <S.HeaderBar>
       <S.CategoryContainer>
-        <S.CategoryItem
-          active={location.pathname === HOME ? 'true' : 'false'}
+        <Button
+          active={location.pathname === HOME ? 'true' : 'false'} // 문자열로 설정
           onClick={() => navigate(HOME)}
         >
-          <p>Home</p>
-        </S.CategoryItem>
-        <S.CategoryItem
-          active={location.pathname === PROJECT ? 'true' : 'false'}
+          Home
+        </Button>
+        <Button
+          active={location.pathname === PROJECT ? 'true' : 'false'} // 문자열로 설정
           onClick={() => navigate(PROJECT)}
         >
-          <p>Project</p>
-        </S.CategoryItem>
-        <S.CategoryItem
-          active={location.pathname === STUDY ? 'true' : 'false'}
+          Project
+        </Button>
+        <Button
+          active={location.pathname === STUDY ? 'true' : 'false'} // 문자열로 설정
           onClick={() => navigate(STUDY)}
         >
-          <p>Study</p>
-        </S.CategoryItem>
+          Study
+        </Button>
       </S.CategoryContainer>
     </S.HeaderBar>
   );
@@ -53,28 +50,6 @@ const S = {
     width: 30%;
     gap: 10%;
   `,
-
-  CategoryItem: styled.div<CategoryItemProps>`
-    width: 15%;
-    height: 4vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 1.2rem;
-    border-radius: 4px;
-    background-color: ${(props) =>
-      props.active === 'true' ? colors.semantic.secondary : ''};
-    color: ${(props) =>
-      props.active === 'true'
-        ? colors.semantic.text.light
-        : colors.semantic.text.dark};
-    &:hover {
-      color: ${colors.semantic.text.light};
-    }
-
-    p {
-      cursor: pointer;
-    }
-  `,
 };
+
+export default Header;
