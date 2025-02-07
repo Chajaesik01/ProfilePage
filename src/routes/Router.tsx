@@ -1,6 +1,10 @@
 import { ROUTER_PATH } from '@/constants/constants';
 import Layout from '@/layout';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from 'react-router-dom';
 
 const Router = () => {
   const { HOME, PROJECT, STUDY } = ROUTER_PATH;
@@ -10,7 +14,7 @@ const Router = () => {
       children: [
         {
           index: true,
-          //element: <HomePage />, // 기본 경로에 보여줄 컴포넌트 (예: HomePage)
+          element: <Navigate to={HOME} replace />, // 기본 경로에 보여줄 컴포넌트 (예: HomePage)
         },
         {
           path: HOME,
