@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 type ButtonProps = {
   color?: string;
-  size?: 'small' | 'medium' | 'large'; // size prop의 가능한 값 정의
+  size?: 'small' | 'medium' | 'large';
   active?: string;
   children: React.ReactNode;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -12,7 +12,7 @@ type ButtonProps = {
 
 const Button = ({
   color,
-  size = 'medium', // 기본값을 medium으로 설정
+  size = 'medium',
   active = 'false',
   children,
   onClick,

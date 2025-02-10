@@ -1,7 +1,6 @@
 import Description from '@/components/home/home-main/Description';
 import Profile from '@/components/home/home-main/Profile';
 import { colors } from '@/styles';
-import React from 'react';
 import styled from 'styled-components';
 
 const HomePage = () => {
