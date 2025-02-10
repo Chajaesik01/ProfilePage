@@ -1,12 +1,21 @@
 import Button from '@/components/common/Button';
 import { colors } from '@/styles';
-import React from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-
-const Description: React.FC = () => {
+import MainModal from '@/components/modal/MainModal';
+import { modalItems } from '@/mock';
+const Description = () => {
   const text1 = '안녕하세요';
   const text2 = '프론트엔드 개발자 차재식입니다';
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  const handleClick = () => {
+    openModal();
+  };
 
   const renderText = (text: string) => {
     return (
@@ -29,9 +38,15 @@ const Description: React.FC = () => {
     <S.DescContainer>
       {renderText(text1)}
       {renderText(text2)}
-      <Button size="large" active="true">
+      <Button size="large" active="true" onClick={handleClick}>
         More
       </Button>
+      <MainModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        modalItems={modalItems}
+        initialIndex={0}
+      />
     </S.DescContainer>
   );
 };
