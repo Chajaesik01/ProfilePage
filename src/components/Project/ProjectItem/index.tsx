@@ -1,12 +1,9 @@
 import { projectItem } from '@/mock';
 import { colors } from '@/styles';
+import { handleMove } from '@/utils/utils';
 import styled from 'styled-components';
 
 const ProjectItem = () => {
-  const handleMove = (url: string) => {
-    window.open(url, '_blank');
-  };
-
   return (
     <S.ItemList>
       {projectItem.map((item) => (

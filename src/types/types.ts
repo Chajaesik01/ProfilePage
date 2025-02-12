@@ -13,3 +13,11 @@ export type ProjectItem = {
   desc: string;
   url: string;
 };
+
+export type StudyItem = {
+  index: number;
+  topic: string;
+  desc: string;
+  github_link: string;
+  blog_link: string;
+};
