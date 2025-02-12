@@ -43,6 +43,10 @@ const S = {
     border-radius: 10px;
     cursor: pointer;
 
+    &:hover {
+      background-color: ${colors.semantic.hover.secondary};
+    }
+
     img {
       width: 80%;
       height: 60%;
