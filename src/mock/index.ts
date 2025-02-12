@@ -1,6 +1,9 @@
-import { ModalItem } from '@/types/types';
+import { ModalItem, ProjectItem } from '@/types/types';
 import main2 from '@/assets/main2.gif';
-
+import project1 from '@/assets/project1.gif';
+import project2 from '@/assets/project2.png';
+import project3 from '@/assets/project3.png';
+import sideProject from '@/assets/sideProject.png';
 export const modalItems: ModalItem[] = [
   {
     id: 1,
@@ -25,5 +28,40 @@ export const modalItems: ModalItem[] = [
     img: main2,
     title: 'Project 4',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit sit amet neque tincidunt pulvinar. Donec vitae velit non felis ullamcorper sagittis.',
+  },
+];
+
+export const projectItem: ProjectItem[] = [
+  {
+    id: 1,
+    img: project1,
+    title: '토이 프로젝트1',
+    stack: 'Vanilla JS, CSS',
+    desc: '설명',
+    url: 'https://github.com/Dev-FE-2/toy-project1-team2-intranet-project',
+  },
+  {
+    id: 2,
+    img: project2,
+    title: '토이 프로젝트2',
+    stack: 'Typescript, StyledComponents, Redux, SWR',
+    desc: '설명',
+    url: 'https://github.com/Dev-FE-2/toy-project2-team3',
+  },
+  {
+    id: 3,
+    img: project3,
+    title: '토이 프로젝트3',
+    stack: 'Typescript, TailwindCSS, Zustand, Tanstack-query, Supabase',
+    desc: '설명',
+    url: 'https://github.com/Dev-FE-2/toy-project3-team2-wefit',
+  },
+  {
+    id: 4,
+    img: sideProject,
+    title: '사이드 프로젝트',
+    stack: 'Typescript, StyledComponents, Zustand, Tanstack-query, Supabase',
+    desc: '설명',
+    url: 'https://github.com/Team-HandinHand/Side-project-HandinHand',
   },
 ];
