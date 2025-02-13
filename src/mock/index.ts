@@ -1,4 +1,4 @@
-import { ModalItem, ProjectItem } from '@/types/types';
+import { ModalItem, ProjectItem, StudyItem } from '@/types/types';
 import main2 from '@/assets/main2.gif';
 import project1 from '@/assets/project1.gif';
 import project2 from '@/assets/project2.png';
@@ -63,5 +63,57 @@ export const projectItem: ProjectItem[] = [
     stack: 'Typescript, StyledComponents, Zustand, Tanstack-query, Supabase',
     desc: '설명',
     url: 'https://github.com/Team-HandinHand/Side-project-HandinHand',
+  },
+];
+
+export const studyItem: StudyItem[] = [
+  {
+    index: 1,
+    topic: 'React',
+    desc: '',
+    github_link: 'https://github.com/Chajaesik01/FE-Learning/tree/main/React',
+    blog_link:
+      'https://vitamin3000.tistory.com/category/React%20%EA%B3%B5%EC%8B%9D%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0',
+  },
+  {
+    index: 2,
+    topic: 'Redux',
+    desc: '',
+    github_link: 'https://github.com/Chajaesik01/FE-Learning/tree/main/Redux',
+    blog_link:
+      'https://vitamin3000.tistory.com/category/Redux%20%EA%B3%B5%EC%8B%9D%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0',
+  },
+  {
+    index: 3,
+    topic: 'Tanstack-query',
+    desc: '',
+    github_link:
+      'https://github.com/Chajaesik01/FE-Learning/tree/main/TanStackQuery',
+    blog_link:
+      'https://vitamin3000.tistory.com/category/TanStackQuery%20%EA%B3%B5%EC%8B%9D%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0',
+  },
+  {
+    index: 4,
+    topic: 'Zustand',
+    desc: '',
+    github_link: 'https://github.com/Chajaesik01/FE-Learning/tree/main/Zustand',
+    blog_link:
+      'https://vitamin3000.tistory.com/category/Zustand%20%EA%B3%B5%EC%8B%9D%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0',
+  },
+  {
+    index: 5,
+    topic: 'Axios',
+    desc: '',
+    github_link: '',
+    blog_link:
+      'https://vitamin3000.tistory.com/category/Axios%20%EA%B3%B5%EC%8B%9D%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0',
+  },
+  {
+    index: 6,
+    topic: 'Webpack',
+    desc: '',
+    github_link: '',
+    blog_link:
+      'https://vitamin3000.tistory.com/category/Webpack%20%EA%B3%B5%EC%8B%9D%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0',
   },
 ];
