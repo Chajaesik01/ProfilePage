@@ -5,9 +5,7 @@ import {
   Navigate,
   RouterProvider,
 } from 'react-router-dom';
-import HomePage from '@/pages/HomePage';
-import StudyPage from '@/pages/StudyPage';
-import ProjectPage from '@/pages/ProjectPage';
+import { HomePage, ProjectPage, StudyPage, NotFoundPage } from '@/pages';
 const Router = () => {
   const { HOME, PROJECT, STUDY } = ROUTER_PATH;
   const router = createBrowserRouter([
@@ -29,6 +27,10 @@ const Router = () => {
         {
           path: PROJECT,
           element: <ProjectPage />,
+        },
+        {
+          path: '*',
+          element: <NotFoundPage />,
         },
       ],
     },
