@@ -11,7 +11,7 @@ type ButtonProps = {
 };
 
 const Button = ({
-  color,
+  color = 'black',
   size = 'medium',
   active = 'false',
   children,
