@@ -20,7 +20,6 @@ const StudyPage = () => {
               <th>주제</th>
               <th>GitHub 링크</th>
               <th>블로그 링크</th>
-              <th>설명</th>
             </tr>
           </thead>
           <tbody>
@@ -44,7 +43,6 @@ const StudyPage = () => {
                 >
                   {isEmpty(item.blog_link) ? '' : '클릭'}
                 </S.TableCell>
-                <td>{item.desc}</td>
               </tr>
             ))}
           </tbody>
