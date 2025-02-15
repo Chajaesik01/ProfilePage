@@ -7,10 +7,8 @@ const Project = () => {
     <S.ProjectContainer>
       <S.ProjectWrapper>
         <S.Title>클릭시 해당 깃허브로 이동합니다</S.Title>
-        {/* <S.LeftIcon  /> */}
         <ProjectItem />
       </S.ProjectWrapper>
-      {/* <S.RightIcon /> */}
     </S.ProjectContainer>
   );
 };
@@ -23,8 +21,8 @@ const S = {
     align-items: center;
   `,
   ProjectWrapper: styled.div`
-    width: 70%;
-    height: 50vh;
+    width: 72%;
+    height: 63vh;
   `,
 
   Title: styled.div`

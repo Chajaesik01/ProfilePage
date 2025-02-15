@@ -17,7 +17,6 @@ export type ProjectItem = {
 export type StudyItem = {
   index: number;
   topic: string;
-  desc: string;
   github_link: string;
   blog_link: string;
 };

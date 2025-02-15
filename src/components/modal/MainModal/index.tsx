@@ -57,7 +57,7 @@ const MainModal = ({
           </S.MainModalImg>
           <S.MainModalDesc>
             <h2>{currentItem.title}</h2>
-            <p>{currentItem.desc}</p>
+            <p dangerouslySetInnerHTML={{ __html: currentItem.desc }} />
           </S.MainModalDesc>
           <S.RightIcon onClick={handleRightClick} />
         </S.ModalRow>
@@ -80,15 +80,15 @@ const S = {
     z-index: 1;
   `,
   MainModalContainer: styled.div`
-    width: 40%;
+    width: 50%;
     height: 50vh;
     background-color: white;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     position: relative;
+    padding: 20px;
   `,
   ModalRow: styled.div`
     margin-top: 1vh;
@@ -96,28 +96,27 @@ const S = {
     width: 100%;
     height: 90%;
     position: relative;
-    padding: 20px;
   `,
   MainModalImg: styled.div`
-    ]max-width: 50%;
-    max-height: 85%;
+    min-width: 50%;
+    max-width: 50%;
+    max-height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    margin-top: 1vh;
 
     img {
-      min-width: 70%;
-      max-width: 70%;
+      min-width: 60%;
+      max-width: 60%;
       min-height: 50%;
       max-height: auto;
-      object-fit: cover;
     }
   `,
   MainModalDesc: styled.div`
     width: 50%;
-
+    margin-right: 4vw;
     h2 {
       font-size: 24px;
       font-weight: 700;
@@ -127,7 +126,7 @@ const S = {
     }
   `,
   CloseIcon: styled(IoCloseSharp)`
-    font-size: 36px;
+    font-size: 32px;
     cursor: pointer;
   `,
   LeftIcon: styled(FaArrowAltCircleLeft)`
