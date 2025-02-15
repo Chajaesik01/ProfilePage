@@ -66,6 +66,7 @@ const S = {
     height: 70%;
 
     h2 {
+      font-weight: bold;
       font-size: 24px;
       margin-bottom: 4vh;
     }

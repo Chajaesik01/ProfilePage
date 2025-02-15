@@ -21,8 +21,8 @@ const S = {
     align-items: center;
   `,
   ProjectWrapper: styled.div`
-    width: 70%;
-    height: 50vh;
+    width: 72%;
+    height: 63vh;
   `,
 
   Title: styled.div`

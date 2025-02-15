@@ -40,12 +40,13 @@ const ProjectItem = () => {
 const S = {
   ItemList: styled.div`
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2%;
+    margin-top: 2.5vh;
     padding: 16px;
   `,
 
