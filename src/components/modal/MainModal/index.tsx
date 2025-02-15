@@ -51,7 +51,9 @@ const MainModal = ({
         <S.ModalRow>
           <S.LeftIcon onClick={handleLeftClick} />
           <S.MainModalImg>
-            <img src={currentItem.img} alt="main1" />
+            {currentItem.img.map((image, index) => (
+              <img key={index} src={image} alt={currentItem.title} />
+            ))}
           </S.MainModalImg>
           <S.MainModalDesc>
             <h2>{currentItem.title}</h2>
@@ -97,15 +99,19 @@ const S = {
     padding: 20px;
   `,
   MainModalImg: styled.div`
-    width: 50%;
-    height: 85%;
+    ]max-width: 50%;
+    max-height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     overflow: hidden;
 
     img {
-      width: 80%;
+      min-width: 70%;
+      max-width: 70%;
+      min-height: 50%;
+      max-height: auto;
       object-fit: cover;
     }
   `,

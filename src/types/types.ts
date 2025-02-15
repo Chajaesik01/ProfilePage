@@ -1,6 +1,6 @@
 export type ModalItem = {
   id: number;
-  img: string;
+  img: string[];
   title: string;
   desc: string;
 };
