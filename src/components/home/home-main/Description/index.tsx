@@ -39,7 +39,7 @@ const Description = () => {
       {renderText(text1)}
       {renderText(text2)}
       <Button size="large" active="true" onClick={handleClick}>
-        More
+        About Me
       </Button>
       <MainModal
         isOpen={isModalOpen}

@@ -4,30 +4,24 @@ import project1 from '@/assets/project1.gif';
 import project2 from '@/assets/project2.png';
 import project3 from '@/assets/project3.png';
 import sideProject from '@/assets/sideProject.png';
+import bodyYgymCommunity from '@/assets/bodyYgymCommunity.png';
+import computer_algorithm from '@/assets/computerAlgorithm.png';
+import research1 from '@/assets/research1.png';
+import formatter from '@/assets/fomatter.gif';
+import deadlift from '@/assets/deadlift.gif';
+import bench from '@/assets/bench.gif';
 export const modalItems: ModalItem[] = [
   {
     id: 1,
-    img: main2,
-    title: '학습을 즐깁니다.',
-    desc: '이 근본적인 질문에는 ',
+    img: [main2],
+    title: '주석이 꼭 필요할까?',
+    desc: '주석은 코드의 가독성을 높이고, 다른 개발자나 미래의 자신이 코드를 이해하는 데 도움을 주지만 해당 언어의 문법을 이해만 하고 있으면 누구든지 알아보기 쉬운 명확하고 직관적이게 코드를 작성하려 노력합니다.',
   },
   {
     id: 2,
-    img: main2,
-    title: '주석이 꼭 필요할까?',
-    desc: '이 근본적인 질문에는 ',
-  },
-  {
-    id: 3,
-    img: main2,
-    title: 'Project 3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit sit amet neque tincidunt pulvinar. Donec vitae velit non felis ullamcorper sagittis.',
-  },
-  {
-    id: 4,
-    img: main2,
-    title: 'Project 4',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit sit amet neque tincidunt pulvinar. Donec vitae velit non felis ullamcorper sagittis.',
+    img: [deadlift, bench],
+    title: '현실에 안주하지 않습니다',
+    desc: '한때 "3대 500"이라는 헬스 붐이 있었고, 많은 사람들이 이를 목표로 삼았지만 부상이나 귀찮음으로 중간에 포기했습니다. 그러나 저는 허리 디스크와 세 번의 부상에도 불구하고 운동 방법을 연구하여 부상을 예방하며 목표를 향해 나아가 현재 3대 455을 달성했습니다 무게 2.5kg 차이로 성공과 실패가 나뉘는 상황 속에서 수많은 실패 후의 한 번의 성공이 운동을 지속하게 만드는 원동력이 되었습니다. 개발 과정에서의 어려움을 해결하는 작은 성공들이 자신감을 높이고 지속적인 학습을 촉진한다고 생각합니다. 즉, 운동과 개발 모두 실패와 성공의 반복 과정을 통해 더 나은 자신으로 성장할 수 있음을 깨달았습니다.',
   },
 ];
 
@@ -37,7 +31,7 @@ export const projectItem: ProjectItem[] = [
     img: project1,
     title: '토이 프로젝트1',
     stack: 'Vanilla JS, CSS',
-    desc: '설명',
+    desc: '',
     url: 'https://github.com/Dev-FE-2/toy-project1-team2-intranet-project',
   },
   {
@@ -45,7 +39,7 @@ export const projectItem: ProjectItem[] = [
     img: project2,
     title: '토이 프로젝트2',
     stack: 'Typescript, StyledComponents, Redux, SWR',
-    desc: '설명',
+    desc: '',
     url: 'https://github.com/Dev-FE-2/toy-project2-team3',
   },
   {
@@ -53,7 +47,7 @@ export const projectItem: ProjectItem[] = [
     img: project3,
     title: '토이 프로젝트3',
     stack: 'Typescript, TailwindCSS, Zustand, Tanstack-query, Supabase',
-    desc: '설명',
+    desc: '',
     url: 'https://github.com/Dev-FE-2/toy-project3-team2-wefit',
   },
   {
@@ -61,8 +55,40 @@ export const projectItem: ProjectItem[] = [
     img: sideProject,
     title: '사이드 프로젝트',
     stack: 'Typescript, StyledComponents, Zustand, Tanstack-query, Supabase',
-    desc: '설명',
+    desc: '',
     url: 'https://github.com/Team-HandinHand/Side-project-HandinHand',
+  },
+  {
+    id: 5,
+    img: bodyYgymCommunity,
+    title: '바디와이짐 커뮤니티 앱',
+    stack: 'Swift, Firebase',
+    desc: '',
+    url: 'https://github.com/Chajaesik01/bodyYgymISO',
+  },
+  {
+    id: 6,
+    img: computer_algorithm,
+    title: '음식 추천 알고리즘',
+    stack: 'C++',
+    desc: '',
+    url: 'https://github.com/Chajaesik01/computer_algorithm',
+  },
+  {
+    id: 7,
+    img: research1,
+    title: '카테고리 분류 및 유사도 분석',
+    stack: 'Python, OpenCV',
+    desc: '',
+    url: 'https://github.com/Chajaesik01/research1',
+  },
+  {
+    id: 8,
+    img: formatter,
+    title: 'Python Code Style Formatter',
+    stack: 'Python',
+    desc: '',
+    url: 'https://github.com/Chajaesik01/pyrestyle',
   },
 ];
 
