@@ -54,6 +54,7 @@ const scale = {
     s800: raw.slate.r800,
     s900: raw.slate.r900,
     s950: raw.slate.r950,
+    s150: raw.gray.r200,
   },
   success: {
     s50: raw.green.r50,
@@ -134,6 +135,7 @@ const semantic = {
   background: {
     light: scale.neutral.s0,
     dark: scale.neutralVariant.s300,
+    gray: scale.neutralVariant.s150,
   },
   text: {
     light: scale.neutral.s50,
