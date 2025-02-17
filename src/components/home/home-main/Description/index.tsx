@@ -39,9 +39,9 @@ const Description = () => {
       {renderText(text1)}
       {renderText(text2)}
       <S.SubContainer>
-        <p>2016 03 ~ 2019 02 서울금융고등학교 금융정보과 졸업</p>
         <p>2019 02 ~ 2026 02 동국대학교 컴퓨터공학과 졸업</p>
-        <p>2024 09 ~ 2025 04 김민태의 데브캠프 2기 수료</p>
+        <p>2016 03 ~ 2019 02 서울금융고등학교 금융정보과 졸업</p>
+        <p>2024 09 ~ 2025 04 김민태의 데브캠프 2기 프론트엔드 수료</p>
       </S.SubContainer>
       <Button size="large" active="true" onClick={handleClick}>
         About Me
